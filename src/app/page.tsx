@@ -1,8 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import ExperienceCard from "./ExperienceCard";
+import ExperienceCard from "@/components/Experience/ExperienceCard";
 import { useState } from "react";
+import ExperienceHeader from "@/components/Experience/ExperienceHeader";
+import ExperienceData from "@/data/Experience.json";
+import ExperienceFooter from "@/components/Experience/ExperienceFooter";
 
 export default function Home() {
   const [activeMenu, setactiveMenu] = useState("About");
@@ -95,19 +98,19 @@ export default function Home() {
           </p>
 
           <div id="experience">
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
+            <ExperienceHeader
+              totalExperience={ExperienceData.totalExperience}
+            />
+
+            {ExperienceData.technicalExperience.map((experience) => {
+              return <ExperienceCard {...experience} />;
+            })}
+
+            <ExperienceFooter />
           </div>
 
           <div id="projects">
+            {/* <ExperienceCard />
             <ExperienceCard />
             <ExperienceCard />
             <ExperienceCard />
@@ -116,8 +119,7 @@ export default function Home() {
             <ExperienceCard />
             <ExperienceCard />
             <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
+            <ExperienceCard /> */}
           </div>
         </div>
       </div>
