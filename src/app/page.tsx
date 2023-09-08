@@ -97,7 +97,7 @@ export default function Home() {
             expanse
           </p>
 
-          <div id="experience">
+          <div id="experience" className="mb-16">
             <ExperienceHeader
               totalExperience={ExperienceData.totalExperience}
             />
@@ -106,7 +106,7 @@ export default function Home() {
               return <ExperienceCard {...experience} />;
             })}
 
-            <ExperienceFooter />
+            <ExperienceFooter resumeLink={ExperienceData.resumeLink} />
           </div>
 
           <div id="projects">
