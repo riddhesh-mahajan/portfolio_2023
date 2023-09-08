@@ -1,0 +1,47 @@
+{
+  "resumeLink": "/Riddhesh-Mahajan-Resume.pdf",
+  "totalExperience": "4 years",
+  "technicalExperience": [
+    {
+      "joining": "Dec 2021",
+      "leaving": "Now",
+      "role": "Senior Software Engineer",
+      "company": "Flamecloud",
+      "skills": [
+        "React",
+        "Node",
+        "Express",
+        "MongoDB",
+        "PostgreSQL",
+        "NextJS",
+        "Docker",
+        "Django"
+      ],
+      "description": "Working on a new product for the company. It's a React app with a Node backend. I'm also working on the CI/CD pipeline for the project."
+    },
+    {
+      "joining": "Jun 2019",
+      "leaving": "Dec 2021",
+      "role": "MERN Stack Developer",
+      "company": "Freelancing",
+      "skills": ["React", "Node", "Express", "MongoDB"],
+      "description": "Working on a new product for the company. It's a React app with a Node backend. I'm also working on the CI/CD pipeline for the project."
+    },
+    {
+      "joining": "Jan 2019",
+      "leaving": "Mar 2019",
+      "role": "Android Developer",
+      "company": "Connect My Match",
+      "skills": ["Android", "NodeJS", "Kotlin", "Java"],
+      "description": "Working on a new product for the company. It's a React app with a Node backend. I'm also working on the CI/CD pipeline for the project."
+    },
+    {
+      "joining": "Sep 2018",
+      "leaving": "Oct 2018",
+      "role": "Android Developer",
+      "company": "Crimson Insights Technologies LLP",
+      "skills": ["Android", "NodeJS", "Kotlin", "Java"],
+      "description": "Working on a new product for the company. It's a React app with a Node backend. I'm also working on the CI/CD pipeline for the project."
+    }
+  ]
+}
