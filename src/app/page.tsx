@@ -1,11 +1,13 @@
 "use client";
 
-import Image from "next/image";
 import ExperienceCard from "@/components/Experience/ExperienceCard";
-import { useState } from "react";
-import ExperienceHeader from "@/components/Experience/ExperienceHeader";
-import ExperienceData from "@/data/Experience.json";
 import ExperienceFooter from "@/components/Experience/ExperienceFooter";
+import ExperienceHeader from "@/components/Experience/ExperienceHeader";
+import ProjectCard from "@/components/Projects/ProjectCard";
+import ProjectHeader from "@/components/Projects/ProjectHeader";
+import ExperienceData from "@/data/Experience.json";
+import ProjectsData from "@/data/Projects.json";
+import { useState } from "react";
 
 export default function Home() {
   const [activeMenu, setactiveMenu] = useState("About");
@@ -13,12 +15,12 @@ export default function Home() {
   return (
     <div className="container mx-auto max-w-8xl">
       <div className="grid grid-cols-2 gap-4">
-        <div className="sticky top-0 flex max-h-screen flex-col justify-between py-12">
+        <div className="sticky top-0 flex flex-col justify-between max-h-screen py-12">
           <div>
-            <p className="text-5xl font-bold text-slate-300 mb-2">
+            <p className="mb-2 text-5xl font-bold text-slate-300">
               Riddhesh Mahajan
             </p>
-            <p className="text-2xl text-slate-300 mb-4">
+            <p className="mb-4 text-2xl text-slate-300">
               Senior Software Developer
             </p>
             <p className="text-slate-400">
@@ -26,7 +28,7 @@ export default function Home() {
               the web.
             </p>
 
-            <nav className="nav hidden lg:block">
+            <nav className="hidden nav lg:block">
               <ul className="mt-16 w-max">
                 <li
                   onClick={() => {
@@ -87,7 +89,7 @@ export default function Home() {
         </div>
 
         <div className="py-12">
-          <p className="text-slate-400 px-4 mb-16" id="about">
+          <p className="px-4 mb-16 text-slate-400" id="about">
             "The moonlight danced on the tranquil lake, casting shimmering
             reflections across the water. In the distance, a lone owl hooted its
             mysterious song, while the leaves rustled in the gentle breeze. The
@@ -110,16 +112,11 @@ export default function Home() {
           </div>
 
           <div id="projects">
-            {/* <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard /> */}
+            <ProjectHeader />
+
+            {ProjectsData.projects.map((project) => {
+              return <ProjectCard {...project} />;
+            })}
           </div>
         </div>
       </div>

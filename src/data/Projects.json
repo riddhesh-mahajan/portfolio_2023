@@ -1,0 +1,55 @@
+{
+  "projects": [
+    {
+      "screenshot": "/screenshots/image.png",
+      "projectLink": "https://kocerroxy.com",
+      "title": "Senior Software Engineer",
+      "company": "Flamecloud",
+      "skills": [
+        "React",
+        "Node",
+        "Express",
+        "MongoDB",
+        "PostgreSQL",
+        "NextJS",
+        "Docker",
+        "Django"
+      ],
+      "description": "Working on a new product for the company. It's a React app with a Node backend. I'm also working on the CI/CD pipeline for the project."
+    },
+    {
+      "screenshot": "/screenshots/image.png",
+      "projectLink": "/",
+      "title": "Senior Software Engineer",
+      "company": "Flamecloud",
+      "skills": [
+        "React",
+        "Node",
+        "Express",
+        "MongoDB",
+        "PostgreSQL",
+        "NextJS",
+        "Docker",
+        "Django"
+      ],
+      "description": "Working on a new product for the company. It's a React app with a Node backend. I'm also working on the CI/CD pipeline for the project."
+    },
+    {
+      "screenshot": "/screenshots/image.png",
+      "projectLink": "https://kocerroxy.com",
+      "title": "Senior Software Engineer",
+      "company": "Flamecloud",
+      "skills": [
+        "React",
+        "Node",
+        "Express",
+        "MongoDB",
+        "PostgreSQL",
+        "NextJS",
+        "Docker",
+        "Django"
+      ],
+      "description": "Working on a new product for the company. It's a React app with a Node backend. I'm also working on the CI/CD pipeline for the project."
+    }
+  ]
+}
