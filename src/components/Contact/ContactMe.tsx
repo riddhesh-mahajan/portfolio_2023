@@ -74,12 +74,14 @@ function ContactMe() {
     handleSubmit,
     isSubmitting,
     getFieldProps,
+    values,
   }: {
     errors: any;
     touched: any;
     handleSubmit: any;
     isSubmitting: boolean;
     getFieldProps: Function;
+    values: any;
   } = formik;
 
   return (
@@ -238,26 +240,38 @@ function ContactMe() {
                           </div>
 
                           {/* Communication Channel Username */}
-                          <div className="mb-5">
-                            <input
-                              type="text"
-                              {...getFieldProps("communicationChannelUsername")}
-                              placeholder="Enter your telegram username or email address"
-                              className="block w-full p-3 border-0 border-none rounded-md text-slate-200 focus:outline-slate-500 focus:outline-2 bg-slate-800"
-                            />
-                            <span
-                              className={`${
-                                Boolean(
-                                  touched.communicationChannelUsername &&
-                                    errors.communicationChannelUsername
-                                )
-                                  ? "block text-red-500 mt-1"
-                                  : "hidden"
-                              }`}
-                            >
-                              {errors.communicationChannelUsername}
-                            </span>
-                          </div>
+                          {values.preferredCommunicationChannel != "" && (
+                            <div className="mb-5">
+                              <input
+                                type="text"
+                                {...getFieldProps(
+                                  "communicationChannelUsername"
+                                )}
+                                placeholder={
+                                  values.preferredCommunicationChannel ==
+                                  "Telegram"
+                                    ? "Enter you telegram username (Example: @username)"
+                                    : values.preferredCommunicationChannel ==
+                                      "Email"
+                                    ? "Enter your email address"
+                                    : "Enter your telegram username or email address"
+                                }
+                                className="block w-full p-3 border-0 border-none rounded-md text-slate-200 focus:outline-slate-500 focus:outline-2 bg-slate-800"
+                              />
+                              <span
+                                className={`${
+                                  Boolean(
+                                    touched.communicationChannelUsername &&
+                                      errors.communicationChannelUsername
+                                  )
+                                    ? "block text-red-500 mt-1"
+                                    : "hidden"
+                                }`}
+                              >
+                                {errors.communicationChannelUsername}
+                              </span>
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>
