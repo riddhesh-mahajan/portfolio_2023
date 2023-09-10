@@ -2,9 +2,12 @@ import MailSVG from "@public/mail.svg";
 import { Form, FormikProvider, useFormik } from "formik";
 import { FormEventHandler, useState } from "react";
 import * as Yup from "yup";
+import axios from "axios";
+import ThankYouForContacting from "./ThankYouForContacting";
 
 function ContactMe() {
   const [openContactMeModal, setopenContactMeModal] = useState(false);
+  const [openThankYouModal, setopenThankYouModal] = useState(false);
 
   const ValidationSchema = Yup.object().shape({
     fullName: Yup.string()
@@ -47,32 +50,21 @@ function ContactMe() {
       setSubmitting(true);
 
       console.log(values);
-      //   await axios
-      //     .patch(`${backendServerBaseURL}/auth/forgot-password`, {
-      //       newPassword: values["newPassword"],
-      //       resetPasswordToken: params.resetPasswordToken,
-      //     })
-      //     .then((response) => {
-      //       setSubmitting(false);
-      //       console.log(response.data.data);
-      //       if (
-      //         response.status === 200 &&
-      //         response.data.message === "Password updated successfully"
-      //       ) {
-      //         navigate(`/password-changed-successfully`);
-      //       }
-      //     })
-      //     .catch((error) => {
-      //       setSubmitting(false);
-      //       try {
-      //         console.log(error);
-      //         if (error.response.status === 400) {
-      //           setErrors({ afterSubmit: error.response.data.message });
-      //         }
-      //       } catch (e) {
-      //         console.log(e);
-      //       }
-      //     });
+
+      try {
+        console.log(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/contact`);
+        const response = await axios.post(
+          `${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/contact`,
+          values
+        );
+
+        if (response.data.message == "Contact request created successfully") {
+          setopenContactMeModal(false);
+          setopenThankYouModal(true);
+        }
+      } catch (err) {
+        console.log(err);
+      }
     },
   });
 
@@ -107,6 +99,7 @@ function ContactMe() {
         Say Hello
       </button>
 
+      {/* Contact me popup */}
       <div
         className={` ${
           openContactMeModal
@@ -303,6 +296,12 @@ function ContactMe() {
           </form>
         </FormikProvider>
       </div>
+
+      {/* Thank you popup */}
+      <ThankYouForContacting
+        openThankYouModal={openThankYouModal}
+        setopenThankYouModal={setopenThankYouModal}
+      />
     </div>
   );
 }
