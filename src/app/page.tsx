@@ -10,6 +10,8 @@ import ProjectHeader from "@/components/Projects/ProjectHeader";
 import ExperienceData from "@/data/Experience.json";
 import ProjectsData from "@/data/Projects.json";
 import { useState } from "react";
+import TimeSVG from "@public/time.svg";
+import BoltSVG from "@public/bolt.svg";
 
 export default function Home() {
   const [activeMenu, setactiveMenu] = useState("About");
@@ -25,10 +27,31 @@ export default function Home() {
             <p className="mb-4 text-2xl text-slate-300">
               Senior Software Developer
             </p>
-            <p className="text-slate-400">
-              I build accessible, inclusive products and digital experiences for
-              the web.
-            </p>
+            <ul className="flex flex-wrap mt-2" aria-label="Technologies used">
+              <li className="mr-1.5 mt-2">
+                <div className="flex items-center px-4 py-2 text-base font-medium leading-5 text-teal-300 rounded-full bg-teal-400/10 ">
+                  <BoltSVG
+                    className="inline-block mr-1 fill-teal-300"
+                    width={18}
+                    height={18}
+                    alt="hello icon"
+                  />
+                  <div className="mb-0.5">Available</div>
+                </div>
+              </li>
+
+              <li className="mr-1.5 mt-2">
+                <div className="flex items-center px-4 py-2 text-base font-medium leading-5 text-teal-300 rounded-full bg-teal-400/10 ">
+                  <TimeSVG
+                    className="inline-block mr-1 fill-teal-300"
+                    width={18}
+                    height={18}
+                    alt="hello icon"
+                  />
+                  <div className="mb-0.5">Any Timezone</div>
+                </div>
+              </li>
+            </ul>
 
             <nav className="hidden nav lg:block">
               <ul className="mt-16 w-max">
