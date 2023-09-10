@@ -163,7 +163,10 @@ export default function Home() {
         </div>
 
         <div className="py-12">
-          <p className="px-4 mb-16 text-slate-400" id="about">
+          <p
+            className="px-4 mb-16 text-slate-400 scroll-mt-10 snap-start"
+            id="about"
+          >
             "The moonlight danced on the tranquil lake, casting shimmering
             reflections across the water. In the distance, a lone owl hooted its
             mysterious song, while the leaves rustled in the gentle breeze. The
@@ -173,7 +176,7 @@ export default function Home() {
             expanse
           </p>
 
-          <div id="experience" className="mb-16">
+          <div id="experience" className="mb-16 scroll-mt-10 snap-start">
             <ExperienceHeader
               totalExperience={ExperienceData.totalExperience}
             />
@@ -185,7 +188,7 @@ export default function Home() {
             <ExperienceFooter resumeLink={ExperienceData.resumeLink} />
           </div>
 
-          <div id="projects" className="mb-16">
+          <div id="projects" className="mb-16 scroll-mt-10 snap-start">
             <ProjectHeader />
 
             {ProjectsData.projects.map((project, index) => {
@@ -193,7 +196,7 @@ export default function Home() {
             })}
           </div>
 
-          <div id="contact" className="mb-16">
+          <div id="contact" className="mb-16 scroll-mt-10 snap-start">
             <ContactHeader />
             <ContactMe />
           </div>
