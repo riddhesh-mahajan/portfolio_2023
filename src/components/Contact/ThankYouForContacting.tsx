@@ -63,7 +63,7 @@ function ThankYouForContacting({
                 </div>
               </div>
             </div>
-            <div className="w-full px-4 py-3 modalBackground flex justify-center ">
+            <div className="w-full px-4 py-8 modalBackground flex justify-center ">
               <button
                 type="button"
                 className="px-10 py-3 text-sm font-semibold bg-white rounded-md shadow-sm text-slate-800 hover:bg-gray-300"
