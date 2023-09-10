@@ -1,5 +1,7 @@
 "use client";
 
+import ContactHeader from "@/components/Contact/ContactHeader";
+import ContactMe from "@/components/Contact/ContactMe";
 import ExperienceCard from "@/components/Experience/ExperienceCard";
 import ExperienceFooter from "@/components/Experience/ExperienceFooter";
 import ExperienceHeader from "@/components/Experience/ExperienceHeader";
@@ -81,6 +83,23 @@ export default function Home() {
                     </span>
                   </a>
                 </li>
+                <li
+                  onClick={() => {
+                    setactiveMenu("contact");
+                  }}
+                >
+                  <a
+                    className={`group flex items-center py-3 ${
+                      activeMenu == "contact" ? "active" : ""
+                    }`}
+                    href="#contact"
+                  >
+                    <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-[.active]:w-16 group-hover:bg-slate-200 group-[.active]:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none" />
+                    <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-[.active]:text-slate-200 group-focus-visible:text-slate-200">
+                      Contact
+                    </span>
+                  </a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -104,19 +123,24 @@ export default function Home() {
               totalExperience={ExperienceData.totalExperience}
             />
 
-            {ExperienceData.technicalExperience.map((experience) => {
-              return <ExperienceCard {...experience} />;
+            {ExperienceData.technicalExperience.map((experience, index) => {
+              return <ExperienceCard {...experience} key={index} />;
             })}
 
             <ExperienceFooter resumeLink={ExperienceData.resumeLink} />
           </div>
 
-          <div id="projects">
+          <div id="projects" className="mb-16">
             <ProjectHeader />
 
-            {ProjectsData.projects.map((project) => {
-              return <ProjectCard {...project} />;
+            {ProjectsData.projects.map((project, index) => {
+              return <ProjectCard {...project} key={index} />;
             })}
+          </div>
+
+          <div id="contact" className="mb-16">
+            <ContactHeader />
+            <ContactMe />
           </div>
         </div>
       </div>
