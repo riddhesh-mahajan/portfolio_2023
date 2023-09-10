@@ -9,9 +9,14 @@ import ProjectCard from "@/components/Projects/ProjectCard";
 import ProjectHeader from "@/components/Projects/ProjectHeader";
 import ExperienceData from "@/data/Experience.json";
 import ProjectsData from "@/data/Projects.json";
+import SocialsData from "@/data/Socials.json";
 import { useState } from "react";
 import TimeSVG from "@public/time.svg";
 import BoltSVG from "@public/bolt.svg";
+import LinkedinSVG from "@public/socials/linkedin.svg";
+import TwitterSVG from "@public/socials/twitter.svg";
+import GithubSVG from "@public/socials/github.svg";
+import Link from "next/link";
 
 export default function Home() {
   const [activeMenu, setactiveMenu] = useState("About");
@@ -127,7 +132,34 @@ export default function Home() {
             </nav>
           </div>
 
-          <div>Add Socials here</div>
+          <div>
+            <Link href={SocialsData.Socials.github} target="_blank">
+              <GithubSVG
+                className="inline-block mr-4 fill-teal-300 cursor-pointer"
+                width={32}
+                height={32}
+                alt="Github icon"
+              />
+            </Link>
+
+            <Link href={SocialsData.Socials.linkedin} target="_blank">
+              <LinkedinSVG
+                className="inline-block mr-4 fill-teal-300 cursor-pointer"
+                width={28}
+                height={28}
+                alt="Linkedin icon"
+              />
+            </Link>
+
+            <Link href={SocialsData.Socials.twitter} target="_blank">
+              <TwitterSVG
+                className="inline-block mr-4 fill-teal-300 cursor-pointer"
+                width={28}
+                height={28}
+                alt="Twitter icon"
+              />
+            </Link>
+          </div>
         </div>
 
         <div className="py-12">
