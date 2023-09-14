@@ -133,7 +133,11 @@ export default function Home() {
           </div>
 
           <div>
-            <Link href={SocialsData.Socials.github} target="_blank">
+            <Link
+              href={SocialsData.Socials.github}
+              target="_blank"
+              aria-label="Github"
+            >
               <GithubSVG
                 className="inline-block mr-4 fill-slate-400 cursor-pointer"
                 width={32}
@@ -142,7 +146,11 @@ export default function Home() {
               />
             </Link>
 
-            <Link href={SocialsData.Socials.linkedin} target="_blank">
+            <Link
+              href={SocialsData.Socials.linkedin}
+              target="_blank"
+              aria-label="Linkedin"
+            >
               <LinkedinSVG
                 className="inline-block mr-4 fill-slate-400 cursor-pointer"
                 width={28}
@@ -151,7 +159,11 @@ export default function Home() {
               />
             </Link>
 
-            <Link href={SocialsData.Socials.twitter} target="_blank">
+            <Link
+              href={SocialsData.Socials.twitter}
+              target="_blank"
+              aria-label="Twitter"
+            >
               <TwitterSVG
                 className="inline-block mr-4 fill-slate-400 cursor-pointer"
                 width={28}

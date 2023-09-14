@@ -14,7 +14,6 @@ function ThankYouForContacting({
           ? "relative z-10 duration-200 ease-in opacity-100"
           : "hidden z-10 duration-300 ease-out opacity-0"
       }`}
-      aria-labelledby="modal-title"
       role="dialog"
       aria-modal="true"
     >
@@ -25,26 +24,17 @@ function ThankYouForContacting({
             <div className="pt-5 pb-4 modalBackground sm:p-6 sm:pb-4">
               <div className="sm:flex sm:items-start">
                 <div className="w-full mt-3">
-                  <h3
-                    className="mb-2 text-2xl font-semibold text-slate-300"
-                    id="modal-title"
-                  >
+                  <h3 className="mb-2 text-2xl font-semibold text-slate-300">
                     Thank you for contacting me!
                   </h3>
 
-                  <h3
-                    className="mb-4 font-semibold leading-6 text-slate-400"
-                    id="modal-title"
-                  >
+                  <h3 className="mb-4 font-semibold leading-6 text-slate-400">
                     Your message has reached me, and I appreciate your outreach.
                     I will contact you in next{" "}
                     <span className="font-bold text-teal-400">24 hours</span>
                   </h3>
 
-                  <h3
-                    className="font-semibold leading-6 text-slate-400"
-                    id="modal-title"
-                  >
+                  <h3 className="font-semibold leading-6 text-slate-400">
                     You can reach me at my telegram username{" "}
                     <a
                       href="https://t.me/riddhesh24"
