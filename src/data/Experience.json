@@ -1,6 +1,7 @@
 {
   "resumeLink": "/Riddhesh-Mahajan-Resume.pdf",
-  "totalExperience": "4 years",
+  "totalExperience": "5 years",
+  "experienceStartDate": "2018-05-01",
   "technicalExperience": [
     {
       "joining": "Dec 2021",
@@ -17,7 +18,7 @@
         "Docker",
         "Django"
       ],
-      "description": "Working on a new product for the company. It's a React app with a Node backend. I'm also working on the CI/CD pipeline for the project."
+      "description": " I played a pivotal role in guiding and mentoring interns and mid-level developers, fostering a collaborative and knowledge-sharing environment within the team. My problem-solving skills were put to the test as I worked on products serving thousands of customers, ensuring robust and scalable solutions. Additionally, I had the privilege of building MVPs for several startup ventures, contributing to their successful launches and growth."
     },
     {
       "joining": "Jun 2019",
@@ -25,23 +26,23 @@
       "role": "MERN Stack Developer",
       "company": "Freelancing",
       "skills": ["React", "Node", "Express", "MongoDB"],
-      "description": "Working on a new product for the company. It's a React app with a Node backend. I'm also working on the CI/CD pipeline for the project."
+      "description": "As a Freelance MERN Stack Developer, I honed my skills in React, Node, Express, and MongoDB to deliver exceptional solutions to clients. I excelled as a problem solver, tackling complex challenges and providing innovative solutions. My portfolio included projects for various clients, where I contributed to the development of their products, from inception to deployment."
     },
     {
       "joining": "Jan 2019",
       "leaving": "Mar 2019",
       "role": "Android Developer",
       "company": "Connect My Match",
-      "skills": ["Android", "NodeJS", "Kotlin", "Java"],
-      "description": "Working on a new product for the company. It's a React app with a Node backend. I'm also working on the CI/CD pipeline for the project."
+      "skills": ["Android", "NodeJS", "Kotlin"],
+      "description": "During my internship as an Android developer, I specialized in Android app development, focusing on a dating app project. I effectively addressed existing issues and enhanced the app's functionality by implementing new features. My contributions were instrumental in improving the overall user experience, and I ensured that these changes were executed successfully. This experience allowed me to gain valuable hands-on knowledge in the field of Android development, making a meaningful impact on the project's success."
     },
     {
       "joining": "Sep 2018",
       "leaving": "Oct 2018",
       "role": "Android Developer",
       "company": "Crimson Insights Technologies LLP",
-      "skills": ["Android", "NodeJS", "Kotlin", "Java"],
-      "description": "Working on a new product for the company. It's a React app with a Node backend. I'm also working on the CI/CD pipeline for the project."
+      "skills": ["Android", "Java"],
+      "description": "During my tenure as an Intern Android Developer, I specialized in Android development, focusing on a shopping app project. I successfully identified and resolved several critical bugs, enhancing the app's overall functionality and performance. My contributions significantly improved the user experience, and I am proud to have executed my responsibilities efficiently, meeting project deadlines and client expectations."
     }
   ]
 }
