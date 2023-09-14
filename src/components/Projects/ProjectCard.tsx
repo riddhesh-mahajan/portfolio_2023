@@ -25,7 +25,7 @@ function ProjectCard({
       <div className="mr-5">
         <Image
           src={screenshot}
-          className="rounded-xl border border-slate-500/30"
+          className="rounded-md border border-slate-500/30"
           alt="Project screenshot"
           width={264}
           height={149}
