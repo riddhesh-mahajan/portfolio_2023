@@ -1,55 +1,44 @@
 {
   "projects": [
     {
-      "screenshot": "/screenshots/image.png",
-      "projectLink": "https://kocerroxy.com",
-      "title": "Senior Software Engineer",
-      "company": "Flamecloud",
-      "skills": [
-        "React",
-        "Node",
-        "Express",
-        "MongoDB",
-        "PostgreSQL",
-        "NextJS",
-        "Docker",
-        "Django"
-      ],
-      "description": "Working on a new product for the company. It's a React app with a Node backend. I'm also working on the CI/CD pipeline for the project."
+      "screenshot": "/screenshots/portfolio/1.png",
+      "projectLink": "https://riddheshdev.com",
+      "title": "Portfolio",
+      "company": "Self",
+      "skills": ["Next", "Tailwindcss", "Typescript"],
+      "description": "Explore my portfolio website, meticulously crafted using Next.js, Tailwind CSS, and TypeScript. Immerse yourself in a visually pleasing and user-friendly experience, where elegant design seamlessly meets optimal functionality. Discover a showcase of my diverse skills and projects while navigating through an intuitive and aesthetically pleasing user interface. Witness firsthand how I blend cutting-edge technologies to deliver an exceptional web experience."
     },
     {
-      "screenshot": "/screenshots/image.png",
-      "projectLink": "/",
-      "title": "Senior Software Engineer",
+      "screenshot": "/screenshots/kocer/1.png",
+      "projectLink": "https://kocerroxy.com",
+      "title": "kocerroxy",
       "company": "Flamecloud",
-      "skills": [
-        "React",
-        "Node",
-        "Express",
-        "MongoDB",
-        "PostgreSQL",
-        "NextJS",
-        "Docker",
-        "Django"
-      ],
-      "description": "Working on a new product for the company. It's a React app with a Node backend. I'm also working on the CI/CD pipeline for the project."
+      "skills": ["React", "Node", "Express", "MongoDB", "Bootstrap"],
+      "description": "In my role as a Senior Software Developer, I spearheaded the development of Kocerroxy, a dynamic proxy-selling website, collaborating closely with a talented team of three. I took charge of implementing numerous critical features, including a cutting-edge proxy generator, a robust public API, and a lucrative referral rewards system. Additionally, I integrated comprehensive analytics tools for the admin, enabling data-driven decision-making. Today, Kocerroxy boasts a user base of over 50,000 satisfied customers, a testament to our dedication and innovation in the field of web development."
     },
     {
-      "screenshot": "/screenshots/image.png",
-      "projectLink": "https://kocerroxy.com",
-      "title": "Senior Software Engineer",
+      "screenshot": "/screenshots/proxiesfo/1.png",
+      "projectLink": "https://proxies.fo",
+      "title": "Proxies.fo",
       "company": "Flamecloud",
-      "skills": [
-        "React",
-        "Node",
-        "Express",
-        "MongoDB",
-        "PostgreSQL",
-        "NextJS",
-        "Docker",
-        "Django"
-      ],
-      "description": "Working on a new product for the company. It's a React app with a Node backend. I'm also working on the CI/CD pipeline for the project."
+      "skills": ["React", "Node", "Express", "MongoDB", "Bootstrap", "Docker"],
+      "description": "In my role as a Senior Software Developer, I played a pivotal role in the development of Proxies.fo, a cutting-edge proxy selling website. Collaborating within a tight-knit team of two, we embarked on an impressive journey, starting with the creation of the initial MVP and iterating through multiple phases of enhancement. Notable contributions include the implementation of key features such as a dynamic proxy generator and a referral rewards system, empowering the platform for seamless user experiences and growth. Explore the depths of my portfolio to witness the evolution of this project and my expertise in action."
+    },
+    {
+      "screenshot": "/screenshots/scalez/1.png",
+      "projectLink": "http://ai.scalez.in/",
+      "title": "Scalez AI",
+      "company": "Flamecloud",
+      "skills": ["React", "Node", "Express", "MongoDB", "Ant Design", "OpenAI"],
+      "description": "In my capacity as a Senior Software Developer, I led a dynamic team of three to create Scalez AI, a groundbreaking project. Leveraging OpenAI technology, we developed a powerful tool capable of generating diverse attributes for marketing campaigns, including ad headings and descriptions. Additionally, we implemented a feature that scrapes Facebook Ads Library, allowing users to filter and view ads with precision. "
+    },
+    {
+      "screenshot": "/screenshots/jorie/1.png",
+      "projectLink": "https://www.joriehc.com",
+      "title": "Jorie Insurance Panel",
+      "company": "Flamecloud",
+      "skills": ["React", "Node", "Express", "MongoDB"],
+      "description": "In the project Jorie, as the Senior Software Developer leading a team of four, I spearheaded the development of a cutting-edge insurance eligibility checking panel. Our unique challenge was to implement separate databases for each organization seamlessly. To address this, I designed and crafted a small but powerful management application in Node.js, ensuring efficient data handling and organization-wide functionality. This portfolio piece showcases my expertise in solving complex problems and delivering tailor-made solutions for clients in the insurance industry."
     }
   ]
 }

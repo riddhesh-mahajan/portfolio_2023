@@ -22,13 +22,15 @@ function ProjectCard({
       className="flex flex-row hover:bg-slate-800/50 cursor-pointer p-4 rounded-md group group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] 
       group-hover:drop-shadow-lg mb-2"
     >
-      <Image
-        src={screenshot}
-        className="mr-4"
-        alt="Project screenshot"
-        width={264}
-        height={149}
-      />
+      <div className="mr-5">
+        <Image
+          src={screenshot}
+          className="rounded-xl border border-slate-500/30"
+          alt="Project screenshot"
+          width={264}
+          height={149}
+        />
+      </div>
 
       <div className="basis-2/3">
         {projectLink != "/" ? (

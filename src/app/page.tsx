@@ -163,18 +163,23 @@ export default function Home() {
         </div>
 
         <div className="py-12">
-          <p
+          <div
             className="px-4 mb-16 text-slate-400 scroll-mt-10 snap-start"
             id="about"
           >
-            "The moonlight danced on the tranquil lake, casting shimmering
-            reflections across the water. In the distance, a lone owl hooted its
-            mysterious song, while the leaves rustled in the gentle breeze. The
-            aroma of freshly baked bread wafted through the air, tempting
-            passersby with its warm embrace. Lost in the moment, I gazed at the
-            stars overhead, each one a tiny beacon of hope in the vast, cosmic
-            expanse
-          </p>
+            <p className="mb-3">
+              Back in 2018, I decided to try my hand at various technologies
+              like React, Android, Django, Node etc. Fast-forward to today, and
+              I’ve had the privilege of building mvps for multiple startups, and
+              complex products for well established companies.
+            </p>
+
+            <p>
+              My main focus these days is building products and leading
+              projects. In my free time I am learning new technologies like
+              nextjs, tailwindcss, typescript etc.
+            </p>
+          </div>
 
           <div id="experience" className="mb-16 scroll-mt-10 snap-start">
             <ExperienceHeader
