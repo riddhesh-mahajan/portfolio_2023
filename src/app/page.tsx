@@ -178,7 +178,7 @@ export default function Home() {
 
           <div id="experience" className="mb-16 scroll-mt-10 snap-start">
             <ExperienceHeader
-              totalExperience={ExperienceData.totalExperience}
+              experienceStartDate={ExperienceData.experienceStartDate}
             />
 
             {ExperienceData.technicalExperience.map((experience, index) => {
