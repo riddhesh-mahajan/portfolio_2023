@@ -108,7 +108,6 @@ function ContactMe() {
             ? "relative z-10 duration-200 ease-in opacity-100"
             : "hidden z-10 duration-300 ease-out opacity-0"
         }`}
-        aria-labelledby="modal-title"
         role="dialog"
         aria-modal="true"
       >
@@ -121,10 +120,7 @@ function ContactMe() {
                   <div className="pt-5 pb-4 modalBackground sm:p-6 sm:pb-4">
                     <div className="sm:flex sm:items-start">
                       <div className="w-full mt-3">
-                        <h3
-                          className="mb-6 text-2xl font-semibold leading-6 text-slate-300"
-                          id="modal-title"
-                        >
+                        <h3 className="mb-6 text-2xl font-semibold leading-6 text-slate-300">
                           Contact Me
                         </h3>
                         <div className="mt-2">
