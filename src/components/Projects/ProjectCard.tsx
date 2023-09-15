@@ -34,15 +34,15 @@ function ProjectCard({
 
   return (
     <div
-      className="flex flex-row hover:bg-slate-800/50 cursor-pointer p-4 rounded-md group group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] 
+      className="md:flex md:flex-row hover:bg-slate-800/50 cursor-pointer p-4 rounded-md group group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] 
       group-hover:drop-shadow-lg mb-2"
     >
-      <div className="mr-5">
+      <div className="mb-5 md:mr-5 md:mb-0">
         <Image
           src={screenshots[0]}
-          className="rounded-md border border-slate-500/30"
+          className="rounded-md border border-slate-500/30 md:w-full"
           alt="Project screenshot"
-          width={264}
+          width={500}
           height={149}
           onClick={() => {
             setselectedProject({
