@@ -22,8 +22,8 @@ export default function Home() {
   const [activeMenu, setactiveMenu] = useState("About");
 
   return (
-    <div className="container mx-auto max-w-7xl px-16">
-      <div className="md:grid md:grid-cols-2 gap-4">
+    <div className="container mx-auto max-w-7xl px-0 md:px-16">
+      <div className="md:grid md:grid-cols-3 gap-4">
         <div className="p-5 md:sticky top-0 flex flex-col justify-between max-h-screen py-12">
           <div className="mb-8 md:mb-0">
             <p className="mb-2 text-5xl font-bold text-slate-300">
@@ -174,7 +174,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="md:py-12">
+        <div className="md:py-12 md:col-span-2">
           <div
             className="px-4 mb-16 text-slate-400 scroll-mt-10 snap-start"
             id="about"
