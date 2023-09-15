@@ -23,9 +23,9 @@ export default function Home() {
 
   return (
     <div className="container mx-auto max-w-8xl">
-      <div className="grid grid-cols-2 gap-4">
-        <div className="sticky top-0 flex flex-col justify-between max-h-screen py-12">
-          <div>
+      <div className="md:grid md:grid-cols-2 gap-4">
+        <div className="p-5 md:sticky top-0 flex flex-col justify-between max-h-screen py-12">
+          <div className="mb-8 md:mb-0">
             <p className="mb-2 text-5xl font-bold text-slate-300">
               Riddhesh Mahajan
             </p>
@@ -174,7 +174,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="py-12">
+        <div className="md:py-12">
           <div
             className="px-4 mb-16 text-slate-400 scroll-mt-10 snap-start"
             id="about"
