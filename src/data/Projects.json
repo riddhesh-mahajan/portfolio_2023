@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "screenshot": "/screenshots/portfolio/1.png",
+      "screenshots": ["/screenshots/portfolio/1.png"],
       "projectLink": "https://riddheshdev.com",
       "title": "Portfolio",
       "company": "Self",
@@ -9,7 +9,14 @@
       "description": "Explore my portfolio website, meticulously crafted using Next.js, Tailwind CSS, and TypeScript. Immerse yourself in a visually pleasing and user-friendly experience, where elegant design seamlessly meets optimal functionality. Discover a showcase of my diverse skills and projects while navigating through an intuitive and aesthetically pleasing user interface. Witness firsthand how I blend cutting-edge technologies to deliver an exceptional web experience."
     },
     {
-      "screenshot": "/screenshots/kocer/1.png",
+      "screenshots": [
+        "/screenshots/kocer/1.png",
+        "/screenshots/kocer/2.png",
+        "/screenshots/kocer/3.png",
+        "/screenshots/kocer/4.png",
+        "/screenshots/kocer/5.png",
+        "/screenshots/kocer/6.png"
+      ],
       "projectLink": "https://kocerroxy.com",
       "title": "kocerroxy",
       "company": "Flamecloud",
@@ -17,7 +24,11 @@
       "description": "In my role as a Senior Software Developer, I spearheaded the development of Kocerroxy, a dynamic proxy-selling website, collaborating closely with a talented team of three. I took charge of implementing numerous critical features, including a cutting-edge proxy generator, a robust public API, and a lucrative referral rewards system. Additionally, I integrated comprehensive analytics tools for the admin, enabling data-driven decision-making. Today, Kocerroxy boasts a user base of over 50,000 satisfied customers, a testament to our dedication and innovation in the field of web development."
     },
     {
-      "screenshot": "/screenshots/proxiesfo/1.png",
+      "screenshots": [
+        "/screenshots/proxiesfo/1.png",
+        "/screenshots/proxiesfo/2.png",
+        "/screenshots/proxiesfo/3.png"
+      ],
       "projectLink": "https://proxies.fo",
       "title": "Proxies.fo",
       "company": "Flamecloud",
@@ -25,7 +36,11 @@
       "description": "In my role as a Senior Software Developer, I played a pivotal role in the development of Proxies.fo, a cutting-edge proxy selling website. Collaborating within a tight-knit team of two, we embarked on an impressive journey, starting with the creation of the initial MVP and iterating through multiple phases of enhancement. Notable contributions include the implementation of key features such as a dynamic proxy generator and a referral rewards system, empowering the platform for seamless user experiences and growth. Explore the depths of my portfolio to witness the evolution of this project and my expertise in action."
     },
     {
-      "screenshot": "/screenshots/scalez/1.png",
+      "screenshots": [
+        "/screenshots/scalez/1.png",
+        "/screenshots/scalez/2.png",
+        "/screenshots/scalez/3.png"
+      ],
       "projectLink": "http://ai.scalez.in/",
       "title": "Scalez AI",
       "company": "Flamecloud",
@@ -33,7 +48,7 @@
       "description": "In my capacity as a Senior Software Developer, I led a dynamic team of three to create Scalez AI, a groundbreaking project. Leveraging OpenAI technology, we developed a powerful tool capable of generating diverse attributes for marketing campaigns, including ad headings and descriptions. Additionally, we implemented a feature that scrapes Facebook Ads Library, allowing users to filter and view ads with precision. "
     },
     {
-      "screenshot": "/screenshots/jorie/1.png",
+      "screenshots": ["/screenshots/jorie/1.png"],
       "projectLink": "https://www.joriehc.com",
       "title": "Jorie Insurance Panel",
       "company": "Flamecloud",

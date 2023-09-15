@@ -1,22 +1,37 @@
 import OpenSVG from "@public/open.svg";
 import Image from "next/image";
 import Link from "next/link";
+import ProjectImagesCarousel from "./ProjectImagesCarousel";
+import { useState } from "react";
+
+type selectedProjectType = {
+  screenshots: string[];
+  projectLink: string;
+  title: string;
+  company: string;
+  description: string;
+  skills: string[];
+} | null;
 
 function ProjectCard({
-  screenshot,
+  screenshots,
   projectLink,
   title,
   company,
   description,
   skills = [],
 }: {
-  screenshot: string;
+  screenshots: string[];
   projectLink: string;
   title: string;
   company: string;
   description: string;
   skills: string[];
 }) {
+  const [openImageCarousel, setopenImageCarousel] = useState(false);
+  const [selectedProject, setselectedProject] =
+    useState<selectedProjectType>(null);
+
   return (
     <div
       className="flex flex-row hover:bg-slate-800/50 cursor-pointer p-4 rounded-md group group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] 
@@ -24,11 +39,22 @@ function ProjectCard({
     >
       <div className="mr-5">
         <Image
-          src={screenshot}
+          src={screenshots[0]}
           className="rounded-md border border-slate-500/30"
           alt="Project screenshot"
           width={264}
           height={149}
+          onClick={() => {
+            setselectedProject({
+              screenshots,
+              projectLink,
+              title,
+              company,
+              description,
+              skills,
+            });
+            setopenImageCarousel(true);
+          }}
         />
       </div>
 
@@ -71,6 +97,13 @@ function ProjectCard({
           ))}
         </ul>
       </div>
+
+      {/* Image coursal modal */}
+      <ProjectImagesCarousel
+        openModal={openImageCarousel}
+        setOpenModal={setopenImageCarousel}
+        selectedProject={selectedProject}
+      />
     </div>
   );
 }
