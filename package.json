@@ -6,16 +6,25 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "vitest",
+    "testcoverage": "vitest run --coverage",
+    "testui": "vitest --ui"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.5.1",
+    "@types/jest": "^29.5.6",
     "@types/node": "20.5.9",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
+    "@vitejs/plugin-react": "^4.1.0",
     "autoprefixer": "10.4.15",
     "axios": "^1.5.0",
     "formik": "^2.4.4",
+    "jsdom": "^22.1.0",
     "moment": "^2.29.4",
     "next": "13.4.19",
     "postcss": "8.4.29",
@@ -26,6 +35,9 @@
     "yup": "^1.2.0"
   },
   "devDependencies": {
-    "@svgr/webpack": "^8.1.0"
+    "@svgr/webpack": "^8.1.0",
+    "@vitest/coverage-v8": "^0.34.6",
+    "@vitest/ui": "^0.34.6",
+    "vitest": "^0.34.6"
   }
 }
