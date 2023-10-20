@@ -29,8 +29,6 @@ jobs:
       - name: Build Next.js App
         run: yarn build
       - name: Debug - List Files in Build Directory
-        run: ls -al .
-      - name: Debug - List Files in Build Directory
         run: ls -al .next/
       - name: Copy Build to EC2
         uses: appleboy/scp-action@master
@@ -38,7 +36,7 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
-          source: .next/
-          target: /home/ubuntu/portfolio/
+          source: ./
+          target: /home/ubuntu/portfolio_2023/
           rm: true
           overwrite: true
