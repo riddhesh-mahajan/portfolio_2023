@@ -68,4 +68,4 @@ jobs:
 
             # Stop and start your application using pm2
             pm2 stop portfolio_2023
-            pm2 start yarn --name "portfolio_2023" --interpreter bash -- start
+            pm2 start npm --name "portfolio_2023" -- start
