@@ -23,7 +23,7 @@ jobs:
 
     steps:
       - name: Set Working Directory
-        run: pwd
-        working-directory: ./portfolio_2023
+        run: ls
+        working-directory: ./
       - name: Build Next.js App
         run: yarn build
