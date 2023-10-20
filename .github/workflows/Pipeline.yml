@@ -22,8 +22,9 @@ jobs:
     needs: test
 
     steps:
-      - name: Set Working Directory
-        run: ls
-        working-directory: ./
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Intall dependencies
+        run: yarn install
       - name: Build Next.js App
         run: yarn build
