@@ -1,25 +1,13 @@
-name: Pipeline
+name: DeployPipeline
 
 on:
-  pull_request:
-    branches: ["*"]
+  push:
+    branches: ["master"]
 
 jobs:
-  test:
-    name: Tests
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Intall dependencies
-        run: yarn install
-      - name: Run tests
-        run: yarn test
-
   deploy:
-    name: Deploy
+    name: Build And Deploy
     runs-on: ubuntu-latest
-    needs: test
 
     steps:
       - name: Checkout
