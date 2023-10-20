@@ -40,3 +40,18 @@ jobs:
           target: /home/ubuntu/portfolio_2023/
           rm: true
           overwrite: true
+
+      - name: SSH into EC2 and restart your app
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            sudo apt install nginx
+            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+            source ~/.bashrc
+            nvm install latest
+            npm i -g pm2
+            pm2 stop portfolio_2023
+            pm2 start yarn --name "portfolio_2023" --interpreter bash -- start
