@@ -17,6 +17,7 @@ jobs:
         run: yarn test
 
   deploy:
+    name: Deploy
     runs-on: ubuntu-latest
 
     steps:
@@ -27,7 +28,7 @@ jobs:
       - name: Build Next.js App
         run: yarn build
       - name: Copy Build to EC2
-        uses: appleboy/scp-action@v0
+        uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USERNAME }}
