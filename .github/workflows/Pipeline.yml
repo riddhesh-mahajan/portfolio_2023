@@ -67,5 +67,6 @@ jobs:
             npm install -g pm2
 
             # Stop and start your application using pm2
+            cd portfolio_2023
             pm2 stop portfolio_2023
             pm2 start npm --name "portfolio_2023" -- start
