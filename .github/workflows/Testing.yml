@@ -1,8 +1,8 @@
-name: PullRequestsPipeline
+name: TestingPipeline
 
 on:
   pull_request:
-    branches: [master]
+    branches: ["*"]
 
 jobs:
   Tests:
