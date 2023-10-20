@@ -38,5 +38,7 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
-          source: ./.next/
-          target: /home/ubuntu/portfolio
+          source: .next/
+          target: /home/ubuntu/portfolio2/.next/
+          rm: true
+          overwrite: true
