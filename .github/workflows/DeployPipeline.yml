@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Set env variables
-        run: export VARNAME="${{ secrets.NEXT_PUBLIC_BACKEND_BASE_URL }}"
+        run: export NEXT_PUBLIC_BACKEND_BASE_URL="${{ secrets.NEXT_PUBLIC_BACKEND_BASE_URL }}"
       - name: Intall dependencies
         run: yarn install
       - name: Build Next.js App
