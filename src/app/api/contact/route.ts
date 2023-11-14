@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   const msg = {
     to: "riddhesh.maha@gmail.com",
-    from: "portfolio@riddheshdev.com",
+    from: "portfolio@riddhesh.dev",
     subject: `Portfolio update (${moment(new Date()).format(
       "DD/MM/YYYY HH:mm"
     )})`,
