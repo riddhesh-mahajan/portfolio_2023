@@ -3,6 +3,7 @@
     {
       "screenshots": ["/screenshots/portfolio/1.png"],
       "projectLink": "https://riddhesh.dev",
+      "githubLink": "https://github.com/riddhesh-mahajan/portfolio_2023",
       "title": "Portfolio",
       "company": "Self",
       "skills": ["Next", "Tailwindcss", "Typescript"],
@@ -18,6 +19,7 @@
         "/screenshots/kocer/6.png"
       ],
       "projectLink": "https://kocerroxy.com",
+      "githubLink": "",
       "title": "kocerroxy",
       "company": "Flamecloud",
       "skills": ["React", "Node", "Express", "MongoDB", "Bootstrap"],
@@ -30,6 +32,7 @@
         "/screenshots/proxiesfo/3.png"
       ],
       "projectLink": "https://proxies.fo",
+      "githubLink": "",
       "title": "Proxies.fo",
       "company": "Flamecloud",
       "skills": ["React", "Node", "Express", "MongoDB", "Bootstrap", "Docker"],
@@ -42,6 +45,7 @@
         "/screenshots/scalez/3.png"
       ],
       "projectLink": "http://ai.scalez.in/",
+      "githubLink": "",
       "title": "Scalez AI",
       "company": "Flamecloud",
       "skills": ["React", "Node", "Express", "MongoDB", "Ant Design", "OpenAI"],
@@ -50,6 +54,7 @@
     {
       "screenshots": ["/screenshots/jorie/1.png"],
       "projectLink": "https://www.joriehc.com",
+      "githubLink": "",
       "title": "Jorie Insurance Panel",
       "company": "Flamecloud",
       "skills": ["React", "Node", "Express", "MongoDB"],
