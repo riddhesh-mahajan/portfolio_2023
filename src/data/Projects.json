@@ -1,11 +1,32 @@
 {
   "projects": [
     {
+      "screenshots": [
+        "/screenshots/slash/1.png",
+        "/screenshots/slash/2.png",
+        "/screenshots/slash/3.png"
+      ],
+      "projectLink": "https://slash-landing.riddhesh.dev/",
+      "githubLink": "https://github.com/riddhesh-mahajan/slash",
+      "title": "Slash",
+      "company": "Self",
+      "skills": [
+        "Next",
+        "Tailwindcss",
+        "Typescript",
+        "Docker",
+        "Github Actions",
+        "AWS"
+      ],
+      "description": "Slash is a comprehensive platform designed to facilitate the practice of Data Structures and Algorithms (DSA) problems. The project was developed using a modern tech stack, including Next.js, Tailwind CSS, and Docker. For every code run, a new Docker container is launched in the backend. Microservice architecture is employed, allowing for scaling of individual services based on the load."
+    },
+    {
       "screenshots": ["/screenshots/portfolio/1.png"],
-      "projectLink": "https://riddheshdev.com",
+      "projectLink": "https://riddhesh.dev",
+      "githubLink": "https://github.com/riddhesh-mahajan/portfolio_2023",
       "title": "Portfolio",
       "company": "Self",
-      "skills": ["Next", "Tailwindcss", "Typescript"],
+      "skills": ["Next", "Tailwindcss", "Typescript", "Github Actions", "AWS"],
       "description": "Explore my portfolio website, meticulously crafted using Next.js, Tailwind CSS, and TypeScript. Immerse yourself in a visually pleasing and user-friendly experience, where elegant design seamlessly meets optimal functionality. Discover a showcase of my diverse skills and projects while navigating through an intuitive and aesthetically pleasing user interface. Witness firsthand how I blend cutting-edge technologies to deliver an exceptional web experience."
     },
     {
@@ -18,6 +39,7 @@
         "/screenshots/kocer/6.png"
       ],
       "projectLink": "https://kocerroxy.com",
+      "githubLink": "",
       "title": "kocerroxy",
       "company": "Flamecloud",
       "skills": ["React", "Node", "Express", "MongoDB", "Bootstrap"],
@@ -30,6 +52,7 @@
         "/screenshots/proxiesfo/3.png"
       ],
       "projectLink": "https://proxies.fo",
+      "githubLink": "",
       "title": "Proxies.fo",
       "company": "Flamecloud",
       "skills": ["React", "Node", "Express", "MongoDB", "Bootstrap", "Docker"],
@@ -42,6 +65,7 @@
         "/screenshots/scalez/3.png"
       ],
       "projectLink": "http://ai.scalez.in/",
+      "githubLink": "",
       "title": "Scalez AI",
       "company": "Flamecloud",
       "skills": ["React", "Node", "Express", "MongoDB", "Ant Design", "OpenAI"],
@@ -50,6 +74,7 @@
     {
       "screenshots": ["/screenshots/jorie/1.png"],
       "projectLink": "https://www.joriehc.com",
+      "githubLink": "",
       "title": "Jorie Insurance Panel",
       "company": "Flamecloud",
       "skills": ["React", "Node", "Express", "MongoDB"],

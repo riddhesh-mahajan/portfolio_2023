@@ -1,4 +1,5 @@
 import OpenSVG from "@public/open.svg";
+import GithubSVG from "@public/github.svg";
 import Image from "next/image";
 import Link from "next/link";
 import ProjectImagesCarousel from "./ProjectImagesCarousel";
@@ -16,6 +17,7 @@ type selectedProjectType = {
 function ProjectCard({
   screenshots,
   projectLink,
+  githubLink,
   title,
   company,
   description,
@@ -23,6 +25,7 @@ function ProjectCard({
 }: {
   screenshots: string[];
   projectLink: string;
+  githubLink: string;
   title: string;
   company: string;
   description: string;
@@ -60,21 +63,59 @@ function ProjectCard({
 
       <div className="basis-2/3">
         {projectLink != "/" ? (
-          <Link href={projectLink} target="_blank">
-            <p
-              className={
-                "text-slate-300 font-bold mb-2 group-hover:text-teal-300 focus-visible:text-teal-300 motion-reduce:transition-none"
-              }
-            >
-              {title} - {company}{" "}
-              <OpenSVG
-                className="inline-block mb-1 ml-1 group-hover:fill-teal-300 fill-white"
-                width={14}
-                height={14}
-                alt="Open link icon"
-              />
-            </p>
-          </Link>
+          <>
+            {githubLink != "" ? (
+              <div className="md:flex md:justify-between">
+                <Link href={projectLink} target="_blank">
+                  <p
+                    className={
+                      "text-slate-300 font-bold mb-2 group-hover:text-teal-300 focus-visible:text-teal-300 motion-reduce:transition-none"
+                    }
+                  >
+                    {title} - {company}{" "}
+                    <OpenSVG
+                      className="inline-block mb-1 ml-1 group-hover:fill-teal-300 fill-white"
+                      width={14}
+                      height={14}
+                      alt="Open link icon"
+                    />
+                  </p>
+                </Link>
+
+                <Link href={githubLink} target="_blank">
+                  <p
+                    className={
+                      "text-slate-300 font-bold mb-2 group-hover:text-teal-300 focus-visible:text-teal-300 motion-reduce:transition-none"
+                    }
+                  >
+                    View Code{" "}
+                    <GithubSVG
+                      className="inline-block mb-1 ml-1 group-hover:fill-teal-300 fill-white"
+                      width={14}
+                      height={14}
+                      alt="Open link icon"
+                    />
+                  </p>
+                </Link>
+              </div>
+            ) : (
+              <Link href={projectLink} target="_blank">
+                <p
+                  className={
+                    "text-slate-300 font-bold mb-2 group-hover:text-teal-300 focus-visible:text-teal-300 motion-reduce:transition-none"
+                  }
+                >
+                  {title} - {company}{" "}
+                  <OpenSVG
+                    className="inline-block mb-1 ml-1 group-hover:fill-teal-300 fill-white"
+                    width={14}
+                    height={14}
+                    alt="Open link icon"
+                  />
+                </p>
+              </Link>
+            )}
+          </>
         ) : (
           <p
             className={
