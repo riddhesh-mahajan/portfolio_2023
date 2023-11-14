@@ -2,7 +2,7 @@
   "projects": [
     {
       "screenshots": ["/screenshots/portfolio/1.png"],
-      "projectLink": "https://riddheshdev.com",
+      "projectLink": "https://riddhesh.dev",
       "title": "Portfolio",
       "company": "Self",
       "skills": ["Next", "Tailwindcss", "Typescript"],
