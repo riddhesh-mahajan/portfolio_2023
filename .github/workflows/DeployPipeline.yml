@@ -2,18 +2,22 @@ name: DeployPipeline
 
 on:
   push:
-    branches: ["master"]
+    branches: ["env-variables"]
 
 jobs:
   deploy:
     name: Build And Deploy
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_BACKEND_BASE_URL: ${{ secrets.NEXT_PUBLIC_BACKEND_BASE_URL }}
+      SEND_EMAILS: ${{ secrets.SEND_EMAILS }}
+      SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
 
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Set env variables
-        run: export NEXT_PUBLIC_BACKEND_BASE_URL="${{ secrets.NEXT_PUBLIC_BACKEND_BASE_URL }}"
+      - name: Delete .git
+        run: rm -rf .git
       - name: Intall dependencies
         run: yarn install
       - name: Build Next.js App
@@ -28,7 +32,6 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           source: ./
           target: /home/ubuntu/portfolio_2023/
-          rm: true
           overwrite: true
 
       - name: SSH into EC2 and restart app
