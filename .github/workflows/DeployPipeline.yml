@@ -2,7 +2,7 @@ name: DeployPipeline
 
 on:
   push:
-    branches: ["env-variables"]
+    branches: ["host-change"]
 
 jobs:
   deploy:
@@ -27,9 +27,9 @@ jobs:
       - name: Copy Build to EC2
         uses: appleboy/scp-action@master
         with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USERNAME }}
-          key: ${{ secrets.EC2_SSH_KEY }}
+          host: ${{ secrets.DIGITAL_OCEAN_HOST }}
+          username: ${{ secrets.DIGITAL_OCEAN_USERNAME }}
+          password: ${{ secrets.DIGITAL_OCEAN_PASSWORD }}
           source: ./
           target: /home/ubuntu/portfolio_2023/
           overwrite: true
@@ -37,9 +37,9 @@ jobs:
       - name: SSH into EC2 and restart app
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USERNAME }}
-          key: ${{ secrets.EC2_SSH_KEY }}
+          host: ${{ secrets.DIGITAL_OCEAN_HOST }}
+          username: ${{ secrets.DIGITAL_OCEAN_USERNAME }}
+          password: ${{ secrets.DIGITAL_OCEAN_PASSWORD }}
           script: |
             sudo apt update
             sudo apt install -y nginx
